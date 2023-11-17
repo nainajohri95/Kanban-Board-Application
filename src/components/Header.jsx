@@ -15,13 +15,13 @@ const MySelect = () => {
   return (
     <div
       style={{
-        display: "flex",
+        display: "inline-block",
         alignItems: "center",
         marginTop: "20px",
         margineLeft: "20px",
       }}
     >
-      <TuneIcon style={{ marginRight: "10px" }} />
+      <TuneIcon style={{ marginRight: "10px", display: "inline-block" }} />
       <FormControl fullWidth>
         <InputLabel id="display-select-label">Display</InputLabel>
         <Select
