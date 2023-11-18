@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import Board from "./components/Boarder/Board";
-import Header from "./components/Header";
+import Header from "./components/Header/Header";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -14,7 +14,7 @@ function App() {
           "https://api.quicksell.co/v1/internal/frontend-assignment"
         );
         const data = await response.json();
-        setTasks(data.tasks);
+        setTasks(data.tasks || []); // Make sure data.tasks is defined, or default to an empty array
       } catch (error) {
         console.log("error while fetching the data", error);
       }

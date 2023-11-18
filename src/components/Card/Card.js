@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+import { IoIosMore } from "react-icons/io";
 
 function Card({ id, title }) {
   return (
@@ -8,8 +9,14 @@ function Card({ id, title }) {
         <p className="card_id">{id}</p>
         {/* Other content in card_top if needed */}
       </div>
-      <p className="card_title">{title}</p>
+      <p className="card_title">Title</p>
       <div className="card_labels"></div>
+      <div className="card_footer">
+        <p>
+          <IoIosMore />
+          <p>Feature Request</p>
+        </p>
+      </div>
     </div>
   );
 }

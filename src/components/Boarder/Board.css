@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 100%;
 }
 
 .board_top {
@@ -18,11 +19,11 @@
 }
 
 .board_top_title span {
-  color: gray;
+  color: #fff;
 }
 
 .board_cards {
-  background-color: rgb(218, 209, 209);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 10px;

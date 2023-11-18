@@ -1,7 +1,9 @@
 import React from "react";
 import "./Board.css";
-import { MoreHorizontal, Plus } from "react-feather";
-import { Card } from "@mui/material";
+import Card from "../Card/Card";
+import { IoIosMore } from "react-icons/io";
+import { GoPlus } from "react-icons/go";
+
 function Board() {
   return (
     <div className="board">
@@ -10,10 +12,19 @@ function Board() {
           To Do
           <span>2</span>
         </p>
-        <Plus />
-        <MoreHorizontal />
+        <p>
+          <GoPlus />
+          <IoIosMore />
+        </p>
       </div>
       <div className="board_cards">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
         <Card />
         <Card />
         <Card />
