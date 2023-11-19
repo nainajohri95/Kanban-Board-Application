@@ -1,9 +1,6 @@
 import React, { useState } from "react";
-import Select from "@mui/material/Select";
-import MenuItem from "@mui/material/MenuItem";
-import InputLabel from "@mui/material/InputLabel";
-import FormControl from "@mui/material/FormControl";
 import { GiSettingsKnobs } from "react-icons/gi";
+import "../Header/Header.css";
 
 const MySelect = () => {
   const [selectedValue, setSelectedValue] = useState("");
@@ -21,11 +18,9 @@ const MySelect = () => {
         margineLeft: "20px",
       }}
     >
+      <p></p>
       <GiSettingsKnobs />
-      {/* <label for="grouping-options" class="dropdown-label">
-        Display:
-      </label> */}
-      <select id="grouping-options" class="dropdown-select">
+      <select class="dropdown-select">
         <option value="status">Display</option>
         <option value="priority">Priority</option>
       </select>
